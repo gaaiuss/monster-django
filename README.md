@@ -1,2 +1,1 @@
-# monster-django
-Studying django
+# AI SIM EM
