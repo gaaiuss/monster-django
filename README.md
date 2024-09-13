@@ -1,0 +1,2 @@
+# monster-django
+Studying django
