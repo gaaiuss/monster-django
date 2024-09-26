@@ -24,3 +24,6 @@ Just a django project for study goal
 - cloned the git repo (pa_autoconfigure_django.py --python=3.10 "git clone url")
 - created superuser
 - site live! (https://gaiusc.pythonanywhere.com/)
+- added blog.urls to the site urls.py path
+- created blog.urls.py
+- got an error (AttributeError: module 'blog.views' has no attribute 'post_list') because view its not configured
