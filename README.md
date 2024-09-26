@@ -18,3 +18,9 @@ Just a django project for study goal
 - registered post in admin.py
 - created superuser to login django admin
 - tested the post funcionality
+- deployed on pythonanywhere.com
+- created API token
+- opened the bash console and installed pythonanywhere (pip3.10 install --user pythonanywhere)
+- cloned the git repo (pa_autoconfigure_django.py --python=3.10 "git clone url")
+- created superuser
+- site live! (https://gaiusc.pythonanywhere.com/)
