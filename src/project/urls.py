@@ -1,13 +1,8 @@
 from django.contrib import admin
-from django.http import HttpRequest, HttpResponse
-from django.urls import path
-
-# The browser will fill the request and the view return the response
-def my_view(request: HttpRequest):
-    return HttpResponse('A message to someone special')
+from django.urls import include, path
 
 urlpatterns = [
-    path('', my_view),
-    path('blog/', my_view),
-    path('admin/', admin.site.urls),
+    path("", include("home.urls")),
+    path("blog/", include("blog.urls")),
+    path("admin/", admin.site.urls),
 ]
