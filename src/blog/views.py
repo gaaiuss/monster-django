@@ -1,10 +1,16 @@
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 
+from blog.data import posts
+
 
 def blog(request: HttpRequest) -> HttpResponse:
     print("Blog")
-    context = {"text": "Welcome to blog", "title": "Blog - "}
+    context = {
+        "text": "Welcome to blog",
+        "title": "Blog - ",
+        "posts": posts,
+    }
 
     return render(
         request=request,

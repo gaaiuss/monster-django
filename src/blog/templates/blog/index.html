@@ -6,9 +6,10 @@
 {% endblock text %}
 
 {% block posts %}
-  {% include 'global/partials/_posts.html' %}
-  {% include 'global/partials/_posts.html' %}
-  {% include 'global/partials/_posts.html' %}
-  {% include 'global/partials/_posts.html' %}
+  
+  {% for post in posts %}
+    {% include 'global/partials/_posts.html' %}
+  {% endfor %}
+    
 {% endblock posts %}
   

@@ -26,7 +26,7 @@ target-version = "py313"
 fix = true
 show-fixes = true
 indent-width = 4
-exclude = ["venv", ".venv", "env", ".env", "node_modules", "__pycache__"]
+exclude = ["venv", ".venv", "env", ".env", "node_modules", "__pycache__", 'data.py']
 
 [tool.ruff.lint]
 select = [
