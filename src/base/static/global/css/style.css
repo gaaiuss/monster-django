@@ -27,6 +27,15 @@ h1 {
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 10%);
 }
 
+.post a {
+  text-decoration: none;
+  color: darkslategrey;
+}
+
+.post a:hover {
+  color: rgb(103, 172, 172);
+}
+
 @media (min-width: 800px) {
   .content {
     grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));

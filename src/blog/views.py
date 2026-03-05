@@ -19,6 +19,20 @@ def blog(request: HttpRequest) -> HttpResponse:
     )
 
 
+def post(request: HttpRequest, post_id: int) -> HttpResponse:
+    print("Blog")
+    context = {
+        "title": f"Post {post_id} - ",
+        "posts": posts,
+    }
+
+    return render(
+        request=request,
+        template_name="blog/index.html",
+        context=context,
+    )
+
+
 def example(request: HttpRequest) -> HttpResponse:
     print("Example")
     context = {"text": "Welcome to blog example", "title": "Example - "}
