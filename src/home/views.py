@@ -6,7 +6,7 @@ from django.shortcuts import render
 def home(request: HttpRequest) -> HttpResponse:
     print("Home")
 
-    context = {"text": "We arrived at home"}
+    context = {"text": "Welcome to home"}
 
     return render(
         request=request,

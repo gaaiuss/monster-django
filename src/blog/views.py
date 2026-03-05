@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 def blog(request: HttpRequest) -> HttpResponse:
     print("Blog")
-    context = {"text": "We arrived at blog", "title": "Blog - "}
+    context = {"text": "Welcome to blog", "title": "Blog - "}
 
     return render(
         request=request,
@@ -15,7 +15,7 @@ def blog(request: HttpRequest) -> HttpResponse:
 
 def example(request: HttpRequest) -> HttpResponse:
     print("Example")
-    context = {"text": "We arrived at blog example", "title": "Example - "}
+    context = {"text": "Welcome to blog example", "title": "Example - "}
 
     return render(
         request=request,
