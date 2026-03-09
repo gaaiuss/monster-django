@@ -10,8 +10,20 @@ body {
   background-color: darkslategrey;
 }
 
-h1 {
+a {
+  color: cornsilk;
+  text-decoration: none;
   padding: 1.5rem;
+  display: block;
+}
+
+a:hover {
+  color: darkgray;
+}
+
+ul {
+  list-style: none;
+  display: flex;
 }
 
 .content {
@@ -36,8 +48,12 @@ h1 {
   color: rgb(103, 172, 172);
 }
 
+.menu {
+  background-color: rgb(58, 57, 57);
+}
+
 @media (min-width: 800px) {
-  .content {
+  .content:not(:has(.single-post)) {
     grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
   }
 }
